@@ -8,5 +8,5 @@ ExecStart=/bin/sh /home/pi/samba_mount.sh
 KillMode=process
 RemainAfterExit=true
 
-[Installed]
-WantedBy=network-online.target
+[Install]
+WantedBy=default.target
