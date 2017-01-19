@@ -10,7 +10,10 @@ sudo ./home/pi/blink1/commandline/blink1-tool --red
 echo "all ready to go"
 
 #Mount USB drive 
-sudo mkdir /mnt/usb/book
+cd /mnt
+sudo mkdir usb
+cd usb
+sudo mkdir book
 sudo mount -o uid=pi,gid=pi /dev/sda1 /mnt/usb/book
 echo "drive mounted"
 
