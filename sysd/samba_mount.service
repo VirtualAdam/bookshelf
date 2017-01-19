@@ -1,0 +1,12 @@
+[Unit]
+Description=Check is DNS is Available
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /home/pi/samba_mount.sh
+KillMode=process
+RemainAfterExit=true
+
+[Installed]
+WantedBy=network-online.target
